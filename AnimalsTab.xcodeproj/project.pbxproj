@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525A8D4125CAF9F400D5C769 /* draft  in Resources */ = {isa = PBXBuildFile; fileRef = 525A8D4025CAF9F400D5C769 /* draft  */; };
 		52AD862E256CD7D900C96EFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AD862D256CD7D900C96EFE /* Main.storyboard */; };
 		52CCFE47257761C3002F052C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CCFE46257761C3002F052C /* Player.swift */; };
 		52D81D5125662099004F9BEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D81D5025662099004F9BEC /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		525A8D4025CAF9F400D5C769 /* draft  */ = {isa = PBXFileReference; lastKnownFileType = text; path = "draft "; sourceTree = "<group>"; };
 		52AD862D256CD7D900C96EFE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		52CCFE46257761C3002F052C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		52D81D4D25662099004F9BEC /* AnimalsTab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalsTab.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 				52D81D5E2566209B004F9BEC /* Info.plist */,
 				52CCFE46257761C3002F052C /* Player.swift */,
 				52D81D7625665D56004F9BEC /* ButtonClass.swift */,
+				525A8D4025CAF9F400D5C769 /* draft  */,
 			);
 			path = AnimalsTab;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				52AD862E256CD7D900C96EFE /* Main.storyboard in Resources */,
 				52D81D6D256624EC004F9BEC /* sealion2.mp3 in Resources */,
 				52D81D6C256624EC004F9BEC /* wolf8.mp3 in Resources */,
+				525A8D4125CAF9F400D5C769 /* draft  in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

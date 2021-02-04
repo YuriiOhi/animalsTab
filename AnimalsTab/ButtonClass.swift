@@ -20,26 +20,19 @@ struct SoundButtonModel {
 }
 
 protocol ButtonDelegate: AnyObject {
-    func playTrackWithModel(modelTitle: SoundButtonModel)
+    func playTrackWithModel(track: String)
 }
 
 class ButtonClass: UIButton {
     var buttonModel: SoundButtonModel?
-    
-    init(with customButtonModel: SoundButtonModel) {
-        self.buttonModel = customButtonModel
-        super.init(frame: .zero)
-    }
-    
     weak var delegate: ButtonDelegate?
-    
-    func getTitle() {
-        let model = self.buttonModel.unsafelyUnwrapped
-        delegate?.playTrackWithModel(modelTitle: model)
-    }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    func configureWithModel(title: String) {
+        self.buttonModel = SoundButtonModel(title: title)
     }
     
+    func passTrack() {
+        let model = self.buttonModel!.getTitle()
+        delegate?.playTrackWithModel(track: model)
+    } 
 }
