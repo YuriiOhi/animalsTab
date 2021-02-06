@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,78 +13,68 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalsTab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0Z-tP-gdG">
-                                <rect key="frame" x="54" y="303" width="320" height="320"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCz-Bt-Dyh">
+                                <rect key="frame" x="10.333333333333343" y="251.33333333333334" width="393.33333333333326" height="393.33333333333326"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" restorationIdentifier="monkey" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfL-ez-ywg" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="17" width="130" height="130"/>
-                                        <state key="normal" title="Button" image="monkey"/>
-                                        <connections>
-                                            <action selector="buttonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dz2-PW-Lpm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" restorationIdentifier="wolf" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqo-tF-wJj" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
-                                        <rect key="frame" x="174" y="171" width="130" height="130"/>
-                                        <state key="normal" title="Button" image="wolf"/>
-                                        <connections>
-                                            <action selector="buttonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ohg-xT-1bE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" restorationIdentifier="racoon" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MyD-RC-fS5" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
-                                        <rect key="frame" x="174" y="17" width="130" height="130"/>
-                                        <state key="normal" title="Button" image="racoon"/>
-                                        <connections>
-                                            <action selector="buttonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y0d-1r-Abg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" restorationIdentifier="seaLion" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBy-Dc-HFn" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="171" width="130" height="130"/>
-                                        <state key="normal" title="Button" image="seaLion"/>
-                                        <connections>
-                                            <action selector="buttonPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B82-U2-l7b"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="YRj-i6-lWM">
+                                        <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="393.33333333333331"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Zzm-Os-mF2">
+                                                <rect key="frame" x="0.0" y="0.0" width="393.33333333333331" height="194.33333333333334"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZwM-zb-s6K" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194.33333333333334" height="194.33333333333334"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcB-74-5s4" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
+                                                        <rect key="frame" x="199.33333333333331" y="0.0" width="194" height="194.33333333333334"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="n1l-DA-Eui">
+                                                <rect key="frame" x="0.0" y="199.33333333333337" width="393.33333333333331" height="194"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6r7-RW-Dbw" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194.33333333333334" height="194"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldv-rn-CLh" customClass="ButtonClass" customModule="AnimalsTab" customModuleProvider="target">
+                                                        <rect key="frame" x="199.33333333333331" y="0.0" width="194" height="194"/>
+                                                        <state key="normal" title="Button"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="dfL-ez-ywg" firstAttribute="top" secondItem="s0Z-tP-gdG" secondAttribute="top" constant="17" id="506-H3-VBF"/>
-                                    <constraint firstItem="hqo-tF-wJj" firstAttribute="leading" secondItem="wBy-Dc-HFn" secondAttribute="trailing" constant="28" id="7Ge-lp-ixR"/>
-                                    <constraint firstItem="MyD-RC-fS5" firstAttribute="leading" secondItem="dfL-ez-ywg" secondAttribute="trailing" constant="28" id="7SM-mv-GR2"/>
-                                    <constraint firstItem="hqo-tF-wJj" firstAttribute="width" secondItem="MyD-RC-fS5" secondAttribute="width" id="97d-su-jDb"/>
-                                    <constraint firstItem="wBy-Dc-HFn" firstAttribute="height" secondItem="dfL-ez-ywg" secondAttribute="height" id="F0r-Fa-Fdk"/>
-                                    <constraint firstItem="MyD-RC-fS5" firstAttribute="width" secondItem="dfL-ez-ywg" secondAttribute="width" id="TRK-1a-WfH"/>
-                                    <constraint firstItem="hqo-tF-wJj" firstAttribute="height" secondItem="MyD-RC-fS5" secondAttribute="height" id="Uy1-Gp-547"/>
-                                    <constraint firstItem="wBy-Dc-HFn" firstAttribute="leading" secondItem="s0Z-tP-gdG" secondAttribute="leading" constant="16" id="VcN-NS-iZ7"/>
-                                    <constraint firstAttribute="bottom" secondItem="wBy-Dc-HFn" secondAttribute="bottom" constant="19" id="Wdf-Sa-RRF"/>
-                                    <constraint firstItem="hqo-tF-wJj" firstAttribute="top" secondItem="MyD-RC-fS5" secondAttribute="bottom" constant="24" id="Wr4-hB-OCr"/>
-                                    <constraint firstAttribute="trailing" secondItem="MyD-RC-fS5" secondAttribute="trailing" constant="16" id="Yer-C5-kdR"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="320" id="dbU-Gf-wck"/>
-                                    <constraint firstAttribute="width" priority="750" constant="320" id="g7i-0g-cIw"/>
-                                    <constraint firstAttribute="bottom" secondItem="hqo-tF-wJj" secondAttribute="bottom" constant="19" id="g9J-rV-ERQ"/>
-                                    <constraint firstItem="wBy-Dc-HFn" firstAttribute="height" secondItem="hqo-tF-wJj" secondAttribute="height" id="gJL-YA-tOr"/>
-                                    <constraint firstAttribute="height" priority="750" constant="320" id="iaK-OW-mhu"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="imX-gR-ctM"/>
-                                    <constraint firstAttribute="width" secondItem="s0Z-tP-gdG" secondAttribute="height" multiplier="1:1" id="k5d-ua-AWW"/>
-                                    <constraint firstItem="dfL-ez-ywg" firstAttribute="height" secondItem="MyD-RC-fS5" secondAttribute="height" id="mKe-N1-KGn"/>
-                                    <constraint firstAttribute="trailing" secondItem="hqo-tF-wJj" secondAttribute="trailing" constant="16" id="nwd-hp-Urq"/>
-                                    <constraint firstItem="hqo-tF-wJj" firstAttribute="width" secondItem="wBy-Dc-HFn" secondAttribute="width" id="qOD-Je-bTK"/>
-                                    <constraint firstItem="MyD-RC-fS5" firstAttribute="top" secondItem="s0Z-tP-gdG" secondAttribute="top" constant="17" id="uff-Lp-nkK"/>
-                                    <constraint firstItem="wBy-Dc-HFn" firstAttribute="width" secondItem="dfL-ez-ywg" secondAttribute="width" id="ujt-fL-AMn"/>
-                                    <constraint firstItem="dfL-ez-ywg" firstAttribute="leading" secondItem="s0Z-tP-gdG" secondAttribute="leading" constant="16" id="vaD-9M-UWU"/>
-                                    <constraint firstItem="wBy-Dc-HFn" firstAttribute="top" secondItem="dfL-ez-ywg" secondAttribute="bottom" constant="24" id="xV3-go-dn0"/>
+                                    <constraint firstAttribute="width" secondItem="gCz-Bt-Dyh" secondAttribute="height" multiplier="1:1" id="On0-Rv-f6C"/>
+                                    <constraint firstItem="YRj-i6-lWM" firstAttribute="leading" secondItem="gCz-Bt-Dyh" secondAttribute="leading" id="TSN-Ln-Int"/>
+                                    <constraint firstItem="YRj-i6-lWM" firstAttribute="top" secondItem="gCz-Bt-Dyh" secondAttribute="top" id="ca0-nU-HtK"/>
+                                    <constraint firstAttribute="trailing" secondItem="YRj-i6-lWM" secondAttribute="trailing" id="fPK-DO-x3Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="YRj-i6-lWM" secondAttribute="bottom" id="zUA-U4-uVn"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.95040690821512508" green="1" blue="0.94719374749408358" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="s0Z-tP-gdG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nUR-8A-CzA"/>
-                            <constraint firstItem="s0Z-tP-gdG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sDa-FY-K1m"/>
+                            <constraint firstItem="gCz-Bt-Dyh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.95" id="ISe-3Q-ZzZ"/>
+                            <constraint firstItem="gCz-Bt-Dyh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="N9y-Xf-7rV"/>
+                            <constraint firstItem="gCz-Bt-Dyh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oyb-WX-HYa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomLeftButton" destination="6r7-RW-Dbw" id="mjX-wg-y7Q"/>
+                        <outlet property="bottomRightButton" destination="ldv-rn-CLh" id="UIP-8l-DVo"/>
+                        <outlet property="topLeftButton" destination="ZwM-zb-s6K" id="nNK-oH-ofF"/>
+                        <outlet property="topRightButton" destination="EcB-74-5s4" id="Xrb-12-vVv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -92,10 +82,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="monkey" width="300" height="168"/>
-        <image name="racoon" width="225" height="225"/>
-        <image name="seaLion" width="225" height="225"/>
-        <image name="wolf" width="225" height="225"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

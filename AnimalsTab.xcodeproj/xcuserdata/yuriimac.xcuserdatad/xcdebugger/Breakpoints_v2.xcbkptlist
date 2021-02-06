@@ -7,79 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0C9E5D0C-1D46-45DD-AD12-7E73E495E9AC"
+            uuid = "11DF94E5-5347-43A8-93EF-0181B01EC37A"
             shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AnimalsTab/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "ViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "0C9E5D0C-1D46-45DD-AD12-7E73E495E9AC - e1b7194cebf01619"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AnimalsTab.ViewController.buttonMonkey.getter : AnimalsTab.ButtonClass"
-                  moduleName = "AnimalsTab"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuriimac/C:C++/AnimalsTab/AnimalsTab/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "0C9E5D0C-1D46-45DD-AD12-7E73E495E9AC - a6db0fd07c4c1fff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AnimalsTab.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AnimalsTab.ViewController"
-                  moduleName = "AnimalsTab"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuriimac/C:C++/AnimalsTab/AnimalsTab/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "274">
-               </Location>
-               <Location
-                  uuid = "0C9E5D0C-1D46-45DD-AD12-7E73E495E9AC - 83aa299e06f8184c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "AnimalsTab.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AnimalsTab.ViewController&gt;"
-                  moduleName = "AnimalsTab"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuriimac/C:C++/AnimalsTab/AnimalsTab/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "221">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "51A73333-7146-4395-B293-F68377CE1848"
-            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AnimalsTab/ButtonClass.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "passTrack()"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "touchesEnded(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C87D73C-F08D-4C50-972C-8A6D682ABF1E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AnimalsTab/Player.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "prepareToPLay(track:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

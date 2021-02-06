@@ -8,53 +8,43 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
-    let audioPlayer = Player()
+final class ViewController: UIViewController  {
+    // MARK: - Public Properties
+    @IBOutlet weak var topLeftButton: ButtonClass!
+    @IBOutlet weak var topRightButton: ButtonClass!
+    @IBOutlet weak var bottomLeftButton: ButtonClass!
+    @IBOutlet weak var bottomRightButton: ButtonClass!
     
-    let buttonMonkey = ButtonClass()//with: SoundButtonModel(title: "monkey1"))
-    let buttonRacoon = ButtonClass()//with: SoundButtonModel(title: "raccoon3"))
-    let buttonSLion = ButtonClass()//with: SoundButtonModel(title: "sealion2"))
-    let buttonWolf = ButtonClass()//with: SoundButtonModel(title: "wolf8"))
+    // MARK: - Private Properties
+    private let audioPlayer = Player()
     
-    @IBAction func buttonPressed(sender: ButtonClass) {
-        switch sender {
-        case buttonMonkey:
-            buttonMonkey.passTrack()
-        case buttonRacoon:
-            buttonRacoon.passTrack()
-        case buttonSLion:
-            buttonSLion.passTrack()
-        case buttonWolf:
-            buttonWolf.passTrack()
-        default:
-            print("ANIMALS")
-        }
-    }
-    
+    // MARK: - UIViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        setDelegates()
-        setTracksTitles()
+        configureButtons()
     }
-    
-    func setDelegates() {
-        buttonMonkey.delegate = self
-        buttonRacoon.delegate = self
-        buttonSLion.delegate = self
-        buttonWolf.delegate = self
-    }
-    
-    func setTracksTitles() {
-        buttonMonkey.configureWithModel(title: "monkey1")
-        buttonRacoon.configureWithModel(title: "raccoon3")
-        buttonSLion.configureWithModel(title: "sealion2")
-        buttonWolf.configureWithModel(title: "wolf8")
-    }
-    
-    
 }
 
+// MARK: - Private Methods
+private extension ViewController {
+    func configureButtons() {
+        let monkeyModel = SoundButtonModel(imageName: "monkey", trackTitle: "monkey1")
+        let raccoonModel = SoundButtonModel(imageName: "racoon", trackTitle: "raccoon3")
+        let seaLionModel = SoundButtonModel(imageName: "seaLion", trackTitle: "sealion2")
+        let wolfModel = SoundButtonModel(imageName: "wolf", trackTitle: "wolf8")
+        
+        configure(button: topLeftButton, with: wolfModel)
+        configure(button: topRightButton, with: seaLionModel)
+        configure(button: bottomLeftButton, with: raccoonModel)
+        configure(button: bottomRightButton, with: monkeyModel)
+    }
+    
+    func configure(button: ButtonClass, with model: SoundButtonModel) {
+        button.delegate = self
+        button.configure(with: model)
+    }
+}
+// MARK: - ButtonDelegate
 extension ViewController: ButtonDelegate {
     func playTrackWithModel(track: String) {
         audioPlayer.prepareToPLay(track: track)

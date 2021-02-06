@@ -8,15 +8,8 @@
 import UIKit
 
 struct SoundButtonModel {
-    private var trackTitle: String
-    
-    init(title: String) {
-        self.trackTitle = title
-    }
-
-    func getTitle() -> String {
-        return self.trackTitle
-    }
+    private(set) var imageName: String
+    private(set) var trackTitle: String
 }
 
 protocol ButtonDelegate: AnyObject {
@@ -24,15 +17,17 @@ protocol ButtonDelegate: AnyObject {
 }
 
 class ButtonClass: UIButton {
-    var buttonModel: SoundButtonModel?
+    private var buttonModel: SoundButtonModel?
     weak var delegate: ButtonDelegate?
-
-    func configureWithModel(title: String) {
-        self.buttonModel = SoundButtonModel(title: title)
+    
+    func configure(with model: SoundButtonModel) {
+        setImage(UIImage(named: model.imageName), for: .normal)
+        setImage(UIImage(named: model.imageName), for: .highlighted)
+        buttonModel = model
     }
     
-    func passTrack() {
-        let model = self.buttonModel!.getTitle()
-        delegate?.playTrackWithModel(track: model)
-    } 
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let trackTitle = buttonModel?.trackTitle else { return }
+        delegate?.playTrackWithModel(track: trackTitle)
+    }
 }
